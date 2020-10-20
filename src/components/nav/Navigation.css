@@ -1,0 +1,18 @@
+.nav-color {
+  background-color: #f7f7f7 !important;
+}
+
+.nav-txt {
+  color: #205f8e !important;
+  font-style: normal;
+  font-weight: normal;
+}
+.nav-txt:hover {
+  color: #163f5f !important;
+  font-weight: bolder;
+}
+
+h4 {
+  color: #205f8e !important;
+  font-weight: bolder;
+}
