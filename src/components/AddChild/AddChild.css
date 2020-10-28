@@ -1,0 +1,77 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.formLogin {
+  margin-top: 5vh;
+  grid-column: 1/13 !important;
+  grid-row: 2/3;
+  border-radius: 2vh;
+  width: 100%;
+
+  background-color: #ffffff;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 2vh;
+  padding: 1vh;
+}
+.placeHolder {
+  background-color: #d9e6ea;
+}
+.form-control::-webkit-input-placeholder {
+  color: #4d8bb8;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+.signIn-btn {
+  background-color: #2870a8 !important;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+}
+.cancel-btn {
+  background-color: #6d301e !important;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+}
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: calc(1px + 1vw);
+}
+.rowForm {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0vh;
+  margin-right: 0vh;
+}
+@media (min-width: 700px) {
+  .container {
+    margin-top: 5vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .formLogin {
+    grid-column: 4/10 !important;
+    grid-row: 2/3;
+  }
+  h2 {
+    font-size: calc(20px + 1.5vw) !important;
+  }
+  .rowForm {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0vh;
+    margin-right: 0vh;
+  }
+}
