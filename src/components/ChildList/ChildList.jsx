@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Row } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+import Child from '../Child/Child';
 import "./ChildList.css"
 const data = {
   users:[
@@ -8,16 +9,23 @@ const data = {
   ],
   children:[
     {id:1,firstName:"Pedro",lastName:"Pony",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
+    {id:2,firstName:"Pepa",lastName:"Pig",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
+    {id:3,firstName:"Suzy",lastName:"Sheep",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
+    //  {id:1,firstName:"Pedro",lastName:"Pony",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
     // {id:2,firstName:"Pepa",lastName:"Pig",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
     // {id:3,firstName:"Suzy",lastName:"Sheep",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
-    
+    //    {id:1,firstName:"Pedro",lastName:"Pony",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
+    // {id:2,firstName:"Pepa",lastName:"Pig",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
+    // {id:3,firstName:"Suzy",lastName:"Sheep",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
 ]
 }
 
 function ChildList() {
   const children = data.children.map(child=>{
     return (
-  <div className="child-btn" onClick={()=>{alert(`Hello ${child.firstName}`)}}>{child.firstName}{" "}{child.lastName}</div>
+  <Child 
+  firstName={child.firstName}
+  lastName={child.lastName}/>
     )
   })
   return (
@@ -26,8 +34,9 @@ function ChildList() {
         <div className="card-title">
           <h2 className="form-title">Child List</h2>
         </div>
-        {/* <div className="child-btn" onClick={()=>{alert("hello Pedro Pony")}}>Pedro Pony</div> */}
+        <div className="childList">
         {children}
+        </div>
         <div className="btns">
             <Button variant="primary" className="signIn-btn">Add child</Button>
         </div>
