@@ -8,15 +8,10 @@ const data = {
 {id:2,firstName:"Mama",lastName:"Mamanita",email:"mama@gmail.com",password:"1111"},
   ],
   children:[
-    {id:1,firstName:"Pedro",lastName:"Pony",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
-    {id:2,firstName:"Pepa",lastName:"Pig",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
-    {id:3,firstName:"Suzy",lastName:"Sheep",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
-    //  {id:1,firstName:"Pedro",lastName:"Pony",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
-    // {id:2,firstName:"Pepa",lastName:"Pig",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
-    // {id:3,firstName:"Suzy",lastName:"Sheep",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
-    //    {id:1,firstName:"Pedro",lastName:"Pony",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
-    // {id:2,firstName:"Pepa",lastName:"Pig",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
-    // {id:3,firstName:"Suzy",lastName:"Sheep",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMesures:"08/10/2020"},
+    {id:1,firstName:"Pedro",lastName:"Pony",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMeasures:"2020-10-08"},
+    {id:2,firstName:"Peppa",lastName:"Pig",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMeasures:"2020-10-08"},
+    {id:3,firstName:"Suzy",lastName:"Sheep",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMeasures:"2020-10-08"},
+
 ]
 }
 
@@ -25,7 +20,13 @@ function ChildList() {
     return (
   <Child 
   firstName={child.firstName}
-  lastName={child.lastName}/>
+  lastName={child.lastName}
+  weight={child.weight}
+  height={child.height}
+  chest={child.chest}
+  head={child.head}
+  dateMeasures={child.dateMeasures}
+  />
     )
   })
   return (

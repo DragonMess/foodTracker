@@ -69,30 +69,6 @@
   font-weight: bold;
   font-size: 3vh;
   color: black;
-}
-.InfoValue {
-  color: #1263a1 !important;
-  font-size: 2vh;
-  font-weight: bolder;
-  text-align: left;
-}
-.InfoData {
-  color: #2870a8 !important;
-  font-size: 2vh;
-  font-weight: normal;
-  text-align: right;
-  margin-right: 1vh;
-}
-.textInfo {
-  display: flex;
-  flex-direction: row;
-  height: 4vh;
-  padding: 0.8vh;
-}
-.icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.iconEdit {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

@@ -14,7 +14,7 @@ function App() {
       {/* <Login></Login> */}
       {/* <Register></Register> */}
       <ChildList></ChildList>
-      {/* <AddChild></AddChild> */}
+      <AddChild></AddChild>
     </div>
   );
 }
