@@ -1,15 +1,28 @@
+.meal-info {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  /* justify-content: space-around; */
+  background-color: #2870a8;
+  font-weight: bold;
+  font-size: 3vh;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 .InfoValue {
   color: #1263a1 !important;
   font-size: 2vh;
   font-weight: bolder;
   text-align: left;
 }
-.InfoData {
-  color: #2870a8 !important;
+.InfoMeal {
+  color: white !important;
   font-size: 2vh;
-  font-weight: normal;
-  text-align: right;
+  font-weight: bolder;
+  /* text-align: right; */
   margin-right: 1vh;
+  cursor: pointer;
 }
 .textInfo {
   display: flex;
@@ -18,7 +31,7 @@
   padding: 0.8vh;
 }
 hr {
-  margin: 0.1vh !important;
+  margin: 0vh !important;
 }
 .measureForm {
   background-color: #d9e6ea !important;
@@ -37,4 +50,31 @@ input {
 }
 .hidden {
   visibility: hidden;
+}
+.foodTxt {
+  color: white !important;
+  font-size: 1.5vh;
+  font-weight: normal;
+  text-align: right;
+  margin-right: 0vh;
+}
+.textFood {
+  display: flex;
+  flex-direction: row;
+  height: 3vh;
+  padding: 0.1vh;
+}
+.food-info {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  /* justify-content: space-around; */
+  background-color: #2870a8;
+  /* font-weight: bold; */
+  /* font-size: 3vh; */
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-decoration: underline;
+  padding-left: 0.8vh;
 }

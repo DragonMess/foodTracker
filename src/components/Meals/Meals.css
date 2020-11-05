@@ -1,0 +1,40 @@
+.InfoValue {
+  color: #1263a1 !important;
+  font-size: 2vh;
+  font-weight: bolder;
+  text-align: left;
+}
+.InfoData {
+  color: #2870a8 !important;
+  font-size: 2vh;
+  font-weight: normal;
+  text-align: right;
+  margin-right: 1vh;
+}
+.textInfo {
+  display: flex;
+  flex-direction: row;
+  height: 4vh;
+  padding: 0.8vh;
+}
+hr {
+  margin: 0.1vh !important;
+}
+.measureForm {
+  background-color: #d9e6ea !important;
+  margin: 0vh 0px 50vh 0px;
+  height: 3.1vh;
+  width: 20vh;
+  border: none;
+  font-size: 2vh;
+}
+input:active {
+  border-color: white;
+}
+
+input {
+  color: #2870a8 !important;
+}
+.hidden {
+  visibility: hidden;
+}
