@@ -30,8 +30,7 @@
   margin-right: auto;
 }
 .btns {
-  margin-bottom: 1vh;
-  margin-top: 1vh;
+  margin: 1vh auto 1vh auto;
 }
 
 @media (max-width: 700px) {

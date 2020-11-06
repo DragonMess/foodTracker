@@ -59,7 +59,7 @@ function ChildList() {
         {children}
         </div>
         <div className="btns">
-            <Button variant="primary" className="signIn-btn">Add child</Button>
+            <Button variant="primary" className="signIn-btn" href="/addchild">Add child</Button>
         </div>
       </div>
     </div>

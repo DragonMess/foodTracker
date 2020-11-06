@@ -10,10 +10,10 @@ function NotLogged() {
     This is an web application to help parents to follow the diet child's
   </p>
   <p>
-    <Button variant="primary">Sign Up</Button>
+    <Button variant="primary" href="/register">Sign Up</Button>
   </p>
     <p>
-    <Button variant="success">Sign In</Button>
+    <Button variant="success" href="/login">Sign In</Button>
   </p>
 </Jumbotron>
     </article>

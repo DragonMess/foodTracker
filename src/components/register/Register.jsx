@@ -30,8 +30,8 @@ function Register() {
         </Form.Group>
 
         <div className="btns">
-          <Button variant="primary" className="signIn-btn" >Register</Button>
-          <Button variant="primary" className="cancel-btn">Cancel</Button>
+          <Button variant="primary" className="signIn-btn" href="childlist">Register</Button>
+          <Button variant="primary" className="cancel-btn" href="/">Cancel</Button>
         </div>
       </Form>
     </div>

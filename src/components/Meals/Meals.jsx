@@ -6,7 +6,7 @@ function Meals(props) {
  const [ lunch , setLunch ] = useState(false)
  const [ dinner , setDinner ] = useState(false)
  const [ snack , setSnack ] = useState(false)
-// console.log(props)
+
   return (
     <div>
       <section className="meal-info">
@@ -17,7 +17,7 @@ function Meals(props) {
       { breakfast ? 
       <section className="food-info">
         <div className="textFood">
-        <div className="foodTxt">+  Add food</div>
+        <a className="foodTxt" href="/foods">+  Add food</a>
         </div>
       </section>: <div></div>
       }      
@@ -30,7 +30,7 @@ function Meals(props) {
       { lunch ? 
       <section className="food-info">
         <div className="textFood">
-        <div className="foodTxt">+  Add food</div>
+        <a className="foodTxt" href="/foods">+  Add food</a>
         </div>
       </section>: <div></div>
       }
@@ -43,7 +43,7 @@ function Meals(props) {
       { dinner ? 
       <section className="food-info">
         <div className="textFood">
-        <div className="foodTxt">+  Add food</div>
+        <a className="foodTxt" href="/foods">+  Add food</a>
         </div>
       </section>: <div></div>
       }
@@ -56,7 +56,7 @@ function Meals(props) {
       { snack ? 
       <section className="food-info">
         <div className="textFood">
-        <div className="foodTxt">+  Add food</div>
+        <a className="foodTxt" href="/foods">+  Add food</a>
         </div>
       </section>: <div></div>
       }

@@ -19,8 +19,8 @@ function Login() {
     <Form.Control type="password" placeholder="Password" className="placeHolder"/>
   </Form.Group>
   <div className="btns">
-  <Button variant="primary" className="signIn-btn" >Log in</Button>
-<Button variant="primary" className="cancel-btn">Cancel</Button>
+  <Button variant="primary" className="signIn-btn" href="/childlist">Log in</Button>
+<Button variant="primary" className="cancel-btn" href="/">Cancel</Button>
   </div>
 
 </Form>

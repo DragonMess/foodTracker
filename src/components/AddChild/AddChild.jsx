@@ -58,8 +58,8 @@ function AddChild() {
 
 
         <div className="btns">
-          <Button variant="primary" className="signIn-btn" >Register</Button>
-          <Button variant="primary" className="cancel-btn">Cancel</Button>
+          <Button variant="primary" className="signIn-btn" href="/childlist" >Save</Button>
+          <Button variant="primary" className="cancel-btn" href="/childlist">Cancel</Button>
         </div>
       </Form>
     </div>
