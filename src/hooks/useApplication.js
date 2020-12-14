@@ -1,11 +1,18 @@
 import axios from "axios";
 
 export default function useApplicationData() {
-  const users = () => {
+  function users() {
     return axios
       .get("http://jsonplaceholder.typicode.com/users")
-      .then((res) => console.log(res));
-  };
+      .then(function (response) {
+        // handle success
+        console.log(response);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      });
+  }
 
   return {
     users,
