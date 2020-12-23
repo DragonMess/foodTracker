@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
+import Results from '../Results/Results'
 import SearchBar from '../SearchBar/SearchBar'
 
 function Foods() {
@@ -12,11 +13,7 @@ function Foods() {
         <div className="card-title">
           <h2 className="form-title">Foods</h2>
         </div>
-        <SearchBar onSearch={}/>
-   {/* <Form.Group controlId="formGroupFoodName" >
-      <Form.Label>Food Name</Form.Label>
-      <Form.Control type="name" placeholder="Enter Food name" className="placeHolder"/>
-  </Form.Group> */}
+    <SearchBar onSearch={console.log("here on search bar")}/>
   <Form.Group controlId="exampleForm.ControlSelect2">
     <Form.Label>Select a food from the list</Form.Label>
     <Form.Control as="select" multiple>
