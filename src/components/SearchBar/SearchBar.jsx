@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-
+import "./SearchBar.css"
 function SearchBar(props) {
  const [value, setValue] = useState("")
- 
+ const { onSearch } = props
 
   return (
     <section className="search">
