@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, Form, Row } from 'react-bootstrap';
 import "./Login.css"
 import useApplication from "../../hooks/useApplication.js"
 function Login() {
-  const {users} = useApplication;
+  const [ path , setPath] = useState("")
+  const {users} = useApplication();
+ const handleUsers = (e)=>{
+  if (users() ) {
+   setPath("/childlist")
+  }
+ }
+  // console.log("aqui")
   return (
     <div className="container">
       <Form className="formLogin">
         <div className="title">
-        <h2 className="form-title">Login</h2>
+        <h2 className="form-title" >Login</h2>
 
         </div>
   <Form.Group controlId="formGroupEmail" >
@@ -20,7 +27,7 @@ function Login() {
     <Form.Control type="password" placeholder="Password" className="placeHolder"/>
   </Form.Group>
   <div className="btns">
-  <Button variant="primary" className="signIn-btn" href="/childlist"  onClick={users}>Log in</Button>
+  <Button variant="primary" className="signIn-btn" href={path } onClick={handleUsers} >Log in</Button>
 <Button variant="primary" className="cancel-btn" href="/">Cancel</Button>
   </div>
 

@@ -2,8 +2,10 @@ import axios from "axios";
 
 export default function useApplicationData() {
   function users() {
-    return axios
-      .get("http://jsonplaceholder.typicode.com/users")
+    return axios({
+      url: "http://jsonplaceholder.typicode.com/users",
+      method: "GET",
+    })
       .then(function (response) {
         // handle success
         console.log(response);
