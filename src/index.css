@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+body,
+:root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+.App {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/images/Food-Image.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+  min-height: 100vh;
+}
+
+.App h1 {
+  color: #205f8e;
+  background-color: white;
+  opacity: 0.5;
+}

@@ -1,0 +1,74 @@
+.childListSection {
+  margin-bottom: 3vh;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.8vh;
+  border-color: #edf4f7;
+  border-style: inset;
+  border-width: 2px;
+  text-align: center;
+}
+.child-btn {
+  background-color: #b1e6f3;
+  /* text-decoration-line: underline; */
+  font-weight: bold;
+  font-size: 3vh;
+  color: black;
+}
+.child-btn:active {
+  background-color: #205f8e;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+}
+.child-btn:hover {
+  opacity: 0.6;
+}
+.tabOptions {
+  display: flex;
+  flex-direction: row;
+}
+.option1,
+.option2,
+.option3 {
+  color: white;
+  width: calc(100% / 3);
+  height: 4vh;
+  font-size: 1.7vh;
+  padding: 1vh;
+  font-weight: bold;
+}
+.option1 {
+  background-color: #f2805c;
+}
+.option2 {
+  background-color: #2870a8;
+}
+.option3 {
+  background-color: #4da965;
+}
+.option1:hover,
+.option2:hover,
+.option3:hover {
+  opacity: 0.6;
+}
+.option1:active,
+.option2:active,
+.option3:active {
+  background-color: white;
+  color: red;
+}
+.child-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #d9e6ea;
+  font-weight: bold;
+  font-size: 3vh;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

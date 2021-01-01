@@ -1,0 +1,13 @@
+.main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.jumbo {
+  text-align: center;
+}
+.jumbo h1 {
+  color: black !important;
+  font-weight: bolder;
+}
