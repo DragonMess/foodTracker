@@ -1,31 +1,299 @@
-
-  pattient:[
-    {id:1,firstName:"Pedro",lastName:"Pony",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMeasures:"2020-10-08"},
-    {id:2,firstName:"Peppa",lastName:"Pig",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMeasures:"2020-10-08"},
-    {id:3,firstName:"Suzy",lastName:"Sheep",dob:"02/03/2003",weight:"45",height:"145",chest:"35",head:"28",dateMeasures:"2020-10-08"},
+{
+  "dietPlan": [
+    {
+      "endDate": "2020-11-01",
+      "id": 1,
+      "patientId": 1,
+      "startDate": "2020-10-01",
+      "targetCal": 700,
+      "targetFat": 300,
+      "targetMin": 100
+    },
+    {
+      "endDate": "2020-11-01",
+      "id": 2,
+      "patientId": 2,
+      "startDate": "2020-10-01",
+      "targetCal": 700,
+      "targetFat": 300,
+      "targetMin": 100
+    },
+    {
+      "endDate": "2020-11-01",
+      "id": 3,
+      "patientId": 3,
+      "startDate": "2020-10-01",
+      "targetCal": 700,
+      "targetFat": 300,
+      "targetMin": 100
+    }
   ],
-  pattientMeasurement:[
-    {id:1,patientId:1,weight:"45",height:"145",chest:"35",head:"28",dateMeasures:"2020-10-08"},
-    {id:2,patientId:2,weight:"45",height:"145",chest:"35",head:"28",dateMeasures:"2020-10-08"},
-    {id:3,patientId:3,weight:"45",height:"145",chest:"35",head:"28",dateMeasures:"2020-10-08"},
-    {id:4,patientId:1,weight:"48",height:"147",chest:"39",head:"29",dateMeasures:"2020-11-08"},
-    {id:5,patientId:2,weight:"48",height:"147",chest:"39",head:"29",dateMeasures:"2020-11-08"},
-    {id:6,patientId:3,weight:"48",height:"147",chest:"39",head:"29",dateMeasures:"2020-11-08"},
+  "food": [
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 1,
+      "name": "banane",
+      "owner": "IAHP",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "fruit"
+    },
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 2,
+      "name": "grapes",
+      "owner": "IAHP",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "fruit"
+    },
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 3,
+      "name": "orange",
+      "owner": "IAHP",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "fruit"
+    },
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 4,
+      "name": "cherry",
+      "owner": "IAHP",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "fruit"
+    },
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 5,
+      "name": "pineapple",
+      "owner": "IAHP",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "fruit"
+    },
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 6,
+      "name": "watermelon",
+      "owner": "IAHP",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "fruit"
+    },
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 7,
+      "name": "apple",
+      "owner": "IAHP",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "fruit"
+    },
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 8,
+      "name": "rice",
+      "owner": "IAHP",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "grains"
+    },
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 9,
+      "name": "quinoa",
+      "owner": "IAHP",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "grains"
+    },
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 10,
+      "name": "lentils",
+      "owner": "IAHP",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "grains"
+    },
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 11,
+      "name": "couscous",
+      "owner": "IAHP",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "grains"
+    },
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 12,
+      "name": "beans",
+      "owner": "IAHP",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "grains"
+    },
+    {
+      "cal": 100,
+      "fat": 13,
+      "id": 13,
+      "name": "jabuticaba",
+      "owner": "Adilson",
+      "protein": 78,
+      "timestamp": "2020-01-01",
+      "type": "fruit"
+    }
   ],
-  dietPlan:[
-    {id:1,patientId:1,startDate:"2020-10-01",endDate:"2020-11-01",targetCal:700,targetFat:300,targetMin:100},
-    {id:2,patientId:2,startDate:"2020-10-01",endDate:"2020-11-01",targetCal:700,targetFat:300,targetMin:100},
-    {id:3,patientId:3,startDate:"2020-10-01",endDate:"2020-11-01",targetCal:700,targetFat:300,targetMin:100},
+  "foodEntry": [
+    {
+      "date": "2020-10-08",
+      "foodId": 1,
+      "id": 1,
+      "meal": "breakfast",
+      "patientId": 1,
+      "quantity": 3,
+      "time": "9:00"
+    },
+    {
+      "date": "2020-10-08",
+      "foodId": 2,
+      "id": 2,
+      "meal": "breakfast",
+      "patientId": 1,
+      "quantity": 3,
+      "time": "9:00"
+    },
+    {
+      "date": "2020-10-08",
+      "foodId": 3,
+      "id": 2,
+      "meal": "lunch",
+      "patientId": 1,
+      "quantity": 3,
+      "time": "12:00"
+    }
   ],
-  food: [
-    {id:1,name:"banane",type:"fruit",protein:78,fat:13,cal:100,timestamp:"2020-01-01",owner:"IAHP"},
-    {id:2,name:"apple",type:"fruit",protein:78,fat:13,cal:100,timestamp:"2020-01-01",owner:"IAHP"},
-    {id:3,name:"rice",type:"grains",protein:78,fat:13,cal:100,timestamp:"2020-01-01",owner:"IAHP"},
-    {id:4,name:"jabuticaba",type:"fruit",protein:78,fat:13,cal:100,timestamp:"2020-01-01",owner:"Adilson"},
+  "pattient": [
+    {
+      "chest": "35",
+      "dateMeasures": "2020-10-08",
+      "dob": "02/03/2003",
+      "firstName": "Pedro",
+      "head": "28",
+      "height": "145",
+      "id": 1,
+      "lastName": "Pony",
+      "weight": "45"
+    },
+    {
+      "chest": "35",
+      "dateMeasures": "2020-10-08",
+      "dob": "02/03/2003",
+      "firstName": "Peppa",
+      "head": "28",
+      "height": "145",
+      "id": 2,
+      "lastName": "Pig",
+      "weight": "45"
+    },
+    {
+      "chest": "35",
+      "dateMeasures": "2020-10-08",
+      "dob": "02/03/2003",
+      "firstName": "Suzy",
+      "head": "28",
+      "height": "145",
+      "id": 3,
+      "lastName": "Sheep",
+      "weight": "45"
+    }
   ],
-  foodEntry: [
-    {id:1,patientId:1,foodId:1,meal:"breakfast",quantity:3,time:"9:00",date:"2020-10-08"},
-    {id:2,patientId:1,foodId:2,meal:"breakfast",quantity:3,time:"9:00",date:"2020-10-08"},
-    {id:2,patientId:1,foodId:3,meal:"lunch",quantity:3,time:"12:00",date:"2020-10-08"},
+  "pattientMeasurement": [
+    {
+      "chest": "35",
+      "dateMeasures": "2020-10-08",
+      "head": "28",
+      "height": "145",
+      "id": 1,
+      "patientId": 1,
+      "weight": "45"
+    },
+    {
+      "chest": "35",
+      "dateMeasures": "2020-10-08",
+      "head": "28",
+      "height": "145",
+      "id": 2,
+      "patientId": 2,
+      "weight": "45"
+    },
+    {
+      "chest": "35",
+      "dateMeasures": "2020-10-08",
+      "head": "28",
+      "height": "145",
+      "id": 3,
+      "patientId": 3,
+      "weight": "45"
+    },
+    {
+      "chest": "39",
+      "dateMeasures": "2020-11-08",
+      "head": "29",
+      "height": "147",
+      "id": 4,
+      "patientId": 1,
+      "weight": "48"
+    },
+    {
+      "chest": "39",
+      "dateMeasures": "2020-11-08",
+      "head": "29",
+      "height": "147",
+      "id": 5,
+      "patientId": 2,
+      "weight": "48"
+    },
+    {
+      "chest": "39",
+      "dateMeasures": "2020-11-08",
+      "head": "29",
+      "height": "147",
+      "id": 6,
+      "patientId": 3,
+      "weight": "48"
+    }
+  ],
+  "users": [
+    {
+      "email": "papa@gmail.com",
+      "firstName": "Papa",
+      "id": 1,
+      "lastName": "Poponito",
+      "password": "4545"
+    },
+    {
+      "email": "mama@gmail.com",
+      "firstName": "Mama",
+      "id": 2,
+      "lastName": "Mamanita",
+      "password": "1111"
+    }
   ]
 }

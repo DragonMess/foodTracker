@@ -14,21 +14,17 @@ function Foods() {
   const [term, setTerm] = useState("");
   const [results, setResults] = useState([]);
 
-  const handleSearch = () => {
-    setTerm();
-    setResults();
-  };
   return (
     <div className="container">
       <div className="card">
         <div className="card-title">
           <h2 className="form-title">Foods</h2>
         </div>
-        <SearchBar onSearch={handleSearch} />
+        <SearchBar setTerm={setTerm} term={term} />
         <Form.Group controlId="exampleForm.ControlSelect2">
           <Form.Label>Select a food from the list</Form.Label>
           <Form.Control as="select" multiple>
-            <Results results={results} />
+            <Results results={results} term={term} />
           </Form.Control>
         </Form.Group>
         <div className="btns">
