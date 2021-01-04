@@ -1,0 +1,80 @@
+.container {
+  padding-top: 0vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.card {
+  padding: 1.5vh;
+  background-color: rgb(241, 241, 241);
+  border-radius: 2vh;
+  max-height: 80vh;
+}
+.childList {
+  min-height: 43vh;
+  max-height: 100vh;
+  margin-bottom: 5vh;
+}
+.resultArea {
+  height: 20vh;
+  overflow: auto;
+  background-color: #d9e6ea;
+  border: solid #d5e1e4;
+  border-radius: 1vh;
+}
+.detailFood {
+  height: 10vh;
+  overflow: auto;
+  background-color: #d9e6ea;
+  border: solid #d5e1e4;
+  border-radius: 1vh;
+}
+.card-title {
+  border-radius: 2vh 2vh 0vh 0vh;
+}
+.card-title h2 {
+  padding: 0;
+  margin: 0;
+  color: #205f8e;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signIn-btn {
+  background-color: #2870a8 !important;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+}
+.cancel-btn {
+  background-color: #f2805c !important;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .card {
+    grid-column: 2/12;
+  }
+  .child-btn {
+    font-size: 3vh;
+  }
+  .card-title h2 {
+    font-size: 5vh;
+  }
+}
+@media (min-width: 700px) {
+  .card {
+    grid-column: 3/11;
+  }
+  .child-btn {
+    font-size: 4vh;
+  }
+  .card-title h2 {
+    font-size: 6vh !important;
+  }
+}

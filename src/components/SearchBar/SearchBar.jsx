@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./SearchBar.css";
 function SearchBar(props) {
   const { setTerm, term } = props;
-  useEffect(() => {}, []);
 
   const handleSearch = (e) => {
     setTerm(e.target.value);

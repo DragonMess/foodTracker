@@ -1,3 +1,23 @@
 * {
-  color: black;
+  /* color: black; */
+}
+.labelFood {
+  display: inline-block;
+  margin: 0 0 0 15px;
+  background-color: #d9e6ea;
+  border: none;
+}
+.checkboxFood {
+  display: inline-block;
+  margin: 0 0 0 15px;
+  background-color: blue;
+}
+/* .foodList {
+  display: flex;
+  flex-direction: column;
+} */
+h7 {
+  margin: 0 0 0 15px;
+  /* display: block; */
+  font-size: 1.5vh;
 }
